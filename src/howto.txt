@@ -1,0 +1,71 @@
+=======
+Router:
+=======
+
+* npm install react-router-dom@5 
+
+  Note: There is a newer version 6.
+
+  App.js:
+  =======
+
+  import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+  ============
+  Material UI:
+  ============
+
+  * npm install @material-ui/core --force
+
+  index.html:
+  ==========
+
+  Add this: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+  =====
+  Icon:
+  =====
+
+  * npm install @material-ui/icons --force
+
+  Link to get icon: https://v4.mui.com/components/material-icons/#material-icons
+
+  Double-clicks on the icon that you want and then copy the import and paste it into your components
+
+  =============
+  google font:
+  =============
+
+  * https://fonts.google.com/specimen/Quicksand
+
+    Go here: select all the fonts and then copy and paste the link below into the index.css file.
+
+    index.css:
+    ==========
+
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+    App.js:
+    =======
+
+    const theme = createTheme({
+
+  palette: {
+    primary: {
+      main: '#fefefe',
+    },
+    // BT - The Material UI will automatically applied all 3 light, main, dark for you. You don't
+    //      have to worry about it. You just need to specify the color.
+    secondary: purple
+  },
+  typography: { <=========================Added this
+    fontFamily: 'Quicksand', <=========================Added this
+    fontWeightLight: 400, <=========================Added this
+    fontWeightRegular: 500, <=========================Added this
+    fontWeightMedium: 600, <=========================Added this
+    fontWeightBold: 700 <=========================Added this
+
+  }
+
+})
+
